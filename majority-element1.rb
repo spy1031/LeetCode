@@ -8,7 +8,6 @@ def majority_element(nums)
     if nums_size ==1
         return nums[0]
     end
-    puts nums_size
     while(nums[0] !=nil)
         i=0
         for j in 0..nums_size-1
@@ -16,7 +15,7 @@ def majority_element(nums)
                 i+=1
             end
         end
-        puts i/nums_size.to_f
+        
         if i/nums_size.to_f >0.5
             puts nums[0]
             return nums[0]
