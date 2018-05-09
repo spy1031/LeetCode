@@ -19,7 +19,10 @@ def solution(s)
     if value <= 300
       total = value*3
     else
-      total = 300*3 + (value-300)/60 *150
+      total = (value)/60 *150
+      if value%300
+        total+= 150
+      end
     end
     max = total > max ? total:max
   end
